@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="Architect.ArchitectRegistrationActivity">
+
+    <TextView
+        android:id="@+id/app_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Architect Registration"
+        android:textColor="#0ED689"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/seller_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_banner"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/seller_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_name"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="6dp"
+
+        />
+    <EditText
+        android:id="@+id/seller_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_phone"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        />
+    <EditText
+        android:id="@+id/seller_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_email"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        />
+
+    <Button
+        android:id="@+id/seller_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/button"
+        android:padding="17dp"
+        android:text="REGISTER"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/seller_already_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seller_register_btn"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/button"
+        android:padding="17dp"
+        android:text="ALREADY HAVE AN ACCOUNT?"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
